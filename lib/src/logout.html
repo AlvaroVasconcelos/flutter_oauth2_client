@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        window.onload = function () {
+            localStorage.removeItem('openid_client:auth');
+            localStorage.removeItem('openid_client:state');
+            const params = new URLSearchParams(window.location.search)
+            if (params.has('redirect_uri')) {
+                const redirect = params.get('redirect_uri');
+                window.location.replace(redirect);
+            }
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
