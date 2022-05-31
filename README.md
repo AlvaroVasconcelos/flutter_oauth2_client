@@ -1,12 +1,12 @@
-# aether_passport
+# flutter_oauth2_client
 
-Aether Passport package project.
+flutter oauth2 client package project.
 
 ## Getting Started
 
 **Example**
 ~~~dart
-      var tokenResponse = await Passport.authenticate(
+      var tokenResponse = await FlutterOAuth2Client.authenticate(
           uri: Uri.parse('http://localhost:8080/auth/realms/aether-passport'),
           clientId: 'aether-billing',
           scopes: ['email', 'profile']);
@@ -21,7 +21,7 @@ Aether Passport package project.
         port: Uri.base.port,
       );
 
-      await Passport.logout(
+      await FlutterOAuth2Client.logout(
         uri: Uri.parse('http://localhost:8080/auth/realms/aether-passport'),
         idTokenString: tokenRepoponse, //mobile only
         redirectString: base.toString(), //web only

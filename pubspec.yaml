@@ -1,6 +1,6 @@
 name: flutter_oauth2_client
 description: Flutter oauth2 all client
-version: 0.0.1
+version: 0.0.1+1
 homepage: https://github.com/AlvaroVasconcelos/flutter_oauth2_client
 
 environment:
@@ -15,6 +15,7 @@ dependencies:
   openid_client: ^0.4.6
   # https://pub.dev/packages/url_launcher 
   url_launcher: ^6.1.2
+  http: ^0.13.4
 
 dev_dependencies:
   dart_code_metrics: ^4.15.2
